@@ -1,0 +1,54 @@
+@font-face {
+    font-family: MisFuentes;
+    src:url(/GeneralSans_Complete/Fonts/OTF/GeneralSans-Bold.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+body {
+    background-color: #090820;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    background: linear-gradient( 160deg , #fff 35%, #7030ef, #db1fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: MisFuentes;
+    font-weight: bold;
+    text
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+    background: linear-gradient(to right, #7030ef, #db1fff);
+    border-radius: 50%;
+    height: 250px;
+    position: relative;
+    width: 250px;
+}
+
+.fondo {
+    background: #090820;
+    height: 200px;
+    margin: 25px;
+    position: absolute;
+    width: 200px;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

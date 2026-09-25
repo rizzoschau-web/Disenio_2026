@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Google Sans;
+}
+
+
+.pagina {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-template-rows: 80px 1fr 60px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar contenido"
+        "footer footer";
+}
+
+
+.header {
+    grid-area: header;
+
+    background-color: #89accb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+
+    background-color: #4e3e2d;
+    color: white;
+
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+.contenido {
+    grid-area: contenido;
+
+    background-color: #f7f4f0;
+
+    padding: 30px;
+}
+
+.contenido h2 {
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    grid-area: footer;
+
+    background-color: #89accb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .pagina {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: 80px 1fr 60px;
+
+        grid-template-areas:
+            "header"
+            "contenido"
+            "footer";
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        height: 70px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .contenido h2 {
+        font-size: 22px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+/* 
+Elegi Desktop First porque ya empiezo desde la base de mi ejercicio 10, 
+pensado y diseñado para pantallas grandes, preferí que se adapte progresivamente 
+mediante Media a pantallas de tamaños inferiores. 
+A partir de 768px la sidebar desaparece y el Grid pasa a una sola columna. 
+*/

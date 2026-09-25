@@ -1,0 +1,16 @@
+/* Esto es un comentario */
+ h1{
+    color: #889cb4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+ }
+
+p{
+    color: #422916;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+ }
+
+ body{
+    background: #d1c7ba;
+ }

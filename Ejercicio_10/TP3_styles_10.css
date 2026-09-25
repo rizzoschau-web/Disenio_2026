@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Google Sans;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.pagina {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-template-rows: 80px 1fr 60px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar contenido"
+        "footer footer";
+}
+
+
+/* HEADER */
+
+.header {
+    grid-area: header;
+
+    background-color: #89accb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    grid-area: sidebar;
+
+    background-color: #4e3e2d;
+    color: white;
+
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+/* CONTENIDO */
+
+.contenido {
+    grid-area: contenido;
+
+    background-color: #f7f4f0;
+
+    padding: 30px;
+}
+
+.contenido h2 {
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+
+    background-color: #89accb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

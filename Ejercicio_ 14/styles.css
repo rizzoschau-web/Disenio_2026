@@ -1,0 +1,464 @@
+```css
+/* =========================================
+   VARIABLES PRINCIPALES
+========================================= */
+
+:root {
+    --color-fondo: #f7f4f0;
+    --color-superficie: #ffffff;
+
+    --color-primario: #9aabba;
+    --color-secundario: #806a4f;
+
+    --color-titulo: #4d3d2d;
+    --color-texto: #242424;
+
+    --color-detalle: #800020;
+
+    --espaciado: 24px;
+    --radio: 18px;
+    --sombra: 0 12px 35px rgba(77, 61, 45, 0.10);
+}
+
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+
+    font-family: Arial, sans-serif;
+
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+#tema {
+    display: none;
+}
+
+
+/* =========================================
+   PÁGINA
+========================================= */
+
+.pagina {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 35px 8%;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   DECORACIÓN
+========================================= */
+
+.circulo {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.circulo-1 {
+    width: 300px;
+    height: 300px;
+
+    top: -120px;
+    right: -100px;
+
+    background-color: var(--color-primario);
+
+    opacity: 0.20;
+}
+
+.circulo-2 {
+    width: 180px;
+    height: 180px;
+
+    bottom: 80px;
+    left: -90px;
+
+    background-color: var(--color-secundario);
+
+    opacity: 0.12;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid var(--color-primario);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-secundario);
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BOTÓN DE TEMA
+========================================= */
+
+.tema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    width: 65px;
+    height: 35px;
+
+    border: 1px solid var(--color-primario);
+    border-radius: 30px;
+
+    background-color: var(--color-superficie);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.tema:hover {
+    transform: scale(1.05);
+}
+
+.sol,
+.luna {
+    font-size: 17px;
+}
+
+.sol {
+    color: #806a4f;
+}
+
+.luna {
+    color: #9aabba;
+}
+
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.presentacion {
+    position: relative;
+    z-index: 1;
+
+    max-width: 750px;
+
+    margin: 100px auto 75px;
+
+    text-align: center;
+}
+
+.etiqueta {
+    margin-bottom: 20px;
+
+    color: var(--color-detalle);
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+h1 {
+    margin: 0;
+
+    color: var(--color-titulo);
+
+    font-size: clamp(42px, 7vw, 72px);
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+h1 span {
+    display: block;
+
+    color: var(--color-secundario);
+}
+
+.descripcion {
+    max-width: 520px;
+
+    margin: 30px auto 0;
+
+    color: var(--color-texto);
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    opacity: 0.75;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tarjetas {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+
+    gap: var(--espaciado);
+
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+.tarjeta {
+    min-height: 260px;
+
+    padding: 30px;
+
+    background-color: var(--color-superficie);
+
+    border: 1px solid var(--color-primario);
+
+    border-radius: var(--radio);
+
+    box-shadow: var(--sombra);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 40px rgba(77, 61, 45, 0.15);
+}
+
+
+/* Tarjeta principal */
+
+.principal {
+    background-color: var(--color-secundario);
+
+    border: none;
+
+    color: white;
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    margin-bottom: 45px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-primario);
+
+    color: white;
+
+    font-size: 20px;
+}
+
+.principal h2 {
+    color: white;
+}
+
+.principal p {
+    color: white;
+    opacity: 0.8;
+}
+
+.principal a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+/* Tarjetas secundarias */
+
+.numero {
+    color: var(--color-primario);
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tarjeta h2 {
+    margin: 45px 0 15px;
+
+    color: var(--color-titulo);
+
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.tarjeta p {
+    margin: 0;
+
+    color: var(--color-texto);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    opacity: 0.75;
+}
+
+
+/* =========================================
+   FRASE
+========================================= */
+
+.frase {
+    position: relative;
+    z-index: 1;
+
+    max-width: 500px;
+
+    margin: 90px auto;
+
+    text-align: center;
+}
+
+.frase span {
+    display: block;
+
+    height: 25px;
+
+    color: var(--color-detalle);
+
+    font-size: 40px;
+}
+
+.frase p {
+    margin: 0;
+
+    color: var(--color-titulo);
+
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    padding-top: 20px;
+
+    border-top: 1px solid var(--color-primario);
+
+    color: var(--color-secundario);
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   MODO OSCURO
+========================================= */
+
+#tema:checked + .pagina {
+    --color-fondo: #242424;
+    --color-superficie: #303030;
+
+    --color-primario: #9aabba;
+    --color-secundario: #806a4f;
+
+    --color-titulo: #f7f4f0;
+    --color-texto: #f0ece7;
+
+    --color-detalle: #b47a7a;
+
+    --sombra: 0 12px 35px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .pagina {
+        padding: 25px;
+    }
+
+    .presentacion {
+        margin-top: 70px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta {
+        min-height: auto;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
+```

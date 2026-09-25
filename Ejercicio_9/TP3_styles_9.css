@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #120909, #4a0808, #151515);
+    font-family: Cinzel;
+    color: #e8e1dc;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+/* TÍTULO */
+
+header h1 {
+    color: #e8e1dc;
+    text-shadow: 0 2px 8px #000;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+
+/* GALERÍA */
+
+.galeria {
+    display: flex;
+
+    /* Permite que las tarjetas bajen */
+    flex-wrap: wrap;
+
+    /* Espacio entre tarjetas */
+    gap: 20px;
+
+    /* Centra las tarjetas */
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: #242424;
+    color: #e8e1dc;
+
+    flex-basis: 180px;
+    flex-grow: 1;
+
+    max-width: 210px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+
+/* TARJETA DEL MEDIO */
+
+.tarjeta-grande {
+    flex-basis: 230px;
+    max-width: 260px;
+
+    padding: 25px;
+}
+
+
+/* ICONO */
+
+.iconos {
+    color: #5A0010;
+    text-align: right;
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+/* IMÁGENES */
+
+.tarjeta img {
+    width: 100%;
+    height: 170px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+
+/* IMAGEN DEL MEDIO */
+
+.tarjeta-grande img {
+    height: 230px;
+}
+
+
+/* TÍTULOS */
+
+.tarjeta h2 {
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TÍTULO DEL MEDIO */
+
+.tarjeta-grande h2 {
+    font-size: 15px;
+}
+
+
+/* PRECIO */
+
+.tarjeta p {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* BOTÓN */
+
+.tarjeta button {
+    padding: 8px 25px;
+
+    border: 1px solid #5A0010;
+    border-radius: 20px;
+
+    background-color: transparent;
+    color: #e8e1dc;
+
+    cursor: pointer;
+}
+
+
+/* CUANDO PASÁS EL MOUSE */
+
+.tarjeta button:hover {
+    background-color: #5c0a0a;
+    color: white;
+}
+
+.decoracion {
+    width: 120px;
+    height: 2px;
+    background-color: #151515;
+    margin: 15px auto 30px;
+}
+
+.subtitulo {
+    color: #b8aaa5;
+    font-size: 15px;
+    margin-top: 8px;
+    letter-spacing: 2px;
+}
+

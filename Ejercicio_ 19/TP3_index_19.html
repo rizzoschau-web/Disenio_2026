@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP3 Ej.19</title>
+    <link rel="stylesheet" href="TP3_styles_19.css">
+</head>
+
+<body>
+
+    <input type="radio" name="paso" id="paso1" checked>
+    <input type="radio" name="paso" id="paso2">
+
+    <div class="formulario">
+
+        <header>
+            <h1>Crear cuenta</h1>
+            <p>Completá tus datos para registrarte</p>
+        </header>
+
+        <section class="paso paso-1">
+
+            <h2>Datos personales</h2>
+
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Santiago"
+                    required
+                    minlength="2"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="apellido">Apellido</label>
+                <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Gomez"
+                    required
+                    minlength="2"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="correoelectronico@gmail.com"
+                    required
+                >
+            </div>
+
+            <label for="paso2" class="boton">
+                Siguiente →
+            </label>
+
+        </section>
+
+        <section class="paso paso-2">
+
+            <h2>Crear contraseña</h2>
+
+            <div class="campo">
+                <label for="password">Contraseña</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Mínimo 8 caracteres"
+                    required
+                    minlength="8"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required
+                >
+            </div>
+
+            <div class="botones">
+
+                <label for="paso1" class="boton secundario">
+                    ← Atrás
+                </label>
+
+                <button type="submit" class="boton">
+                    Crear cuenta
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

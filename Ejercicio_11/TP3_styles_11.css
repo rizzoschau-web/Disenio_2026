@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9aa8b6;
+    font-family: Google Sans;
+    color: #89accb;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor {
+    width: 400px;
+    margin: 100px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* TÍTULO */
+
+h1 {
+    margin-bottom: 30px;
+}
+
+
+/* LISTA */
+
+.lista {
+    list-style: none;
+}
+
+
+/* ENLACES */
+
+.lista a {
+    display: block;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    color: black;
+
+    text-decoration: none;
+
+    border: 1px solid black;
+
+    border-radius: 8px;
+}
+
+
+/* PSEUDO-CLASE :hover */
+
+.lista a:hover {
+    background-color: #7a644a;
+    color: white;
+}
+
+
+/* PSEUDO-CLASE :nth-child() */
+
+.lista li:nth-child(2) a {
+    background-color: #7a644a;
+}
+
+
+/* PSEUDO-ELEMENTO ::before */
+
+.lista li::before {
+    content: "Clickeame!";
+
+    color: black;
+
+    margin-right: 8px;
+}

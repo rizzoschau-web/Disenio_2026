@@ -1,0 +1,39 @@
+
+h1{
+    color:darkorange;
+    text-align: center;
+    font-size:50px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4#titulo {
+    color:darkslategrey;
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h2#cuento-moraleja{
+    color:dimgray;
+    font:10px;
+    font-style:italic;
+}
+
+h3#cuento-2{
+    color:#d8a2a2;
+    font-size: 45px;
+    font-style:oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#guisante{
+    color: #8ea66b;
+}
+
+#art_2{
+    background-color:#FFDCDC;
+}
+
+.card p {
+    color:black;
+}

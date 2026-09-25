@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f4f0;
+    color: #242424;
+    font-family: Google Sans;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulario {
+    width: 400px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4d3d2d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 1px;
+    color: #4d3d2d;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #9aabba;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #806a4f;
+    box-shadow: 0 0 5px #9aabba;
+}
+
+button {
+    padding: 12px;
+    background-color: #806a4f;
+    color: #f7f4f0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #9aabba;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #806a4f;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"] {
+    background-color: #806a4f;
+    color: #f7f4f0;
+}
+
+input[type="reset"] {
+    background-color: #9aabba;
+    color: #242424;
+}
+
+input[type="submit"]:hover {
+    background-color: #4d3d2d;
+}
+
+input[type="reset"]:hover {
+    background-color: #7f919f;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    transform: scale(0.95);
+}
+
+form div:nth-of-type(1),
+form div:nth-of-type(2),
+form div:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+}
+
+form div:nth-of-type(1) label,
+form div:nth-of-type(2) label,
+form div:nth-of-type(3) label {
+    width: 80px;
+    text-align: right;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+form div:nth-of-type(1) input,
+form div:nth-of-type(2) input,
+form div:nth-of-type(3) input {
+    width: 230px;
+    height: 40px;
+    box-sizing: border-box;
+}
