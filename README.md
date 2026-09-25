@@ -20,6 +20,7 @@ Utilicé la aplicación de Pinterest para conseguir una paleta de colores consis
 - Ejercicio 11: Pseudo-clases y pseudo-elementos.
 - Ejercicio 12: Posicionamiento con `fixed`, `absolute` y `relative`.
 - Ejercicio 13: Formulario estilizado.
+- Ejercicio 14: Variables CSS y temas
 - Ejercicio 15: Diseño responsive y Media Queries.
 - Ejercicio 16: Animaciones con `@keyframes`.
 - Ejercicio 17: Menú hamburguesa utilizando solamente HTML y CSS.
