@@ -4,7 +4,7 @@
 Se resolvieron todos los ejercicios. El trabajo comenzó desde un nivel muy básico, con poco conocimiento sobre HTML y CSS, y progresivamente se fui investigando y adquiriendo más conocimientos para poder realizar páginas cada vez más elaboradas.
 Al principio, la estética utilizada era muy simple, con colores claros (a veces solo grises de la página) y fuentes predeterminadas de CSS. A medida que se fueron aprendiendo cosas nuevas, aprendí a utilizar fuentes propias, animaciones y degradados para mejorar la apariencia de las páginas.
 
-Utilicé la aplicación de Pinterest para conseguir una paleta de colores consistente y fuentes estéticas.
+Utilicé la aplicación de Pinterest para conseguir una paleta de colores consistente y fuentes estéticas. Por favor utilizar las fuentes descargadas.
 
 ## Ejercicios realizados
 - Ejercicio 1: Estructura HTML básica.
